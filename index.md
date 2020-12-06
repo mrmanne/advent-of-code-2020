@@ -3,15 +3,16 @@ I'm coding Rust in Advent of Code 2020. My solutions can be found in the git rep
 [advent-of-code-2020](https://github.com/mrmanne/advent-of-code-2020)
 
 ## Prerequisites
-Install Rust by following this instruction: https://rustup.rs/
+Install Rust with [rustup](https://rustup.rs/).
 
 ## How to build
-```
+```bash
 $ cargo build
     Finished dev [unoptimized + debuginfo] target(s) in 0.01s
 ```
+
 ## How to run the unit tests
-```
+```bash
 $ cargo test
    Compiling advent-of-code-2020 v0.1.0 (/home/erik/src/advent-of-code-2020)
     Finished test [unoptimized + debuginfo] target(s) in 0.33s
@@ -40,7 +41,7 @@ test result: ok. 17 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
 ```
 
 ## How to solve the puzzle for day 1
-```
+```bash
 $ cargo run 1
     Finished dev [unoptimized + debuginfo] target(s) in 0.00s
      Running `target/debug/advent-of-code-2020 1`
