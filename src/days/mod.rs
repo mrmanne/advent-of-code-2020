@@ -7,6 +7,7 @@ mod day5;
 mod day6;
 mod day7;
 mod day8;
+mod day9;
 
 pub fn puzzle_factory(day: u8) -> Option<Box<dyn Puzzle>> {
     match day {
@@ -18,6 +19,7 @@ pub fn puzzle_factory(day: u8) -> Option<Box<dyn Puzzle>> {
         6 => Some(Box::new(day6::Day6 {})),
         7 => Some(Box::new(day7::Day7 {})),
         8 => Some(Box::new(day8::Day8 {})),
+        9 => Some(Box::new(day9::Day9 {})),
         _ => None,
     }
 }
