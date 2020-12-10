@@ -1,5 +1,6 @@
 use crate::puzzle::Puzzle;
 mod day1;
+mod day10;
 mod day2;
 mod day3;
 mod day4;
@@ -20,6 +21,7 @@ pub fn puzzle_factory(day: u8) -> Option<Box<dyn Puzzle>> {
         7 => Some(Box::new(day7::Day7 {})),
         8 => Some(Box::new(day8::Day8 {})),
         9 => Some(Box::new(day9::Day9 {})),
+        10 => Some(Box::new(day10::Day10 {})),
         _ => None,
     }
 }
