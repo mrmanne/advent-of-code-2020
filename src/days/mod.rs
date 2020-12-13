@@ -3,6 +3,7 @@ mod day1;
 mod day10;
 mod day11;
 mod day12;
+mod day13;
 mod day2;
 mod day3;
 mod day4;
@@ -26,6 +27,7 @@ pub fn puzzle_factory(day: u8) -> Option<Box<dyn Puzzle>> {
         10 => Some(Box::new(day10::Day10 {})),
         11 => Some(Box::new(day11::Day11 {})),
         12 => Some(Box::new(day12::Day12 {})),
+        13 => Some(Box::new(day13::Day13 {})),
         _ => None,
     }
 }
