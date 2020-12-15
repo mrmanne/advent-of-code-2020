@@ -59,8 +59,9 @@ impl Day10 {
 }
 
 impl Puzzle for Day10 {
-    fn solve(&self, lines: io::Lines<io::BufReader<File>>) -> (String, String) {
+    fn solve(&self, lines: io::Result<io::Lines<io::BufReader<File>>>) -> (String, String) {
         let input: Vec<usize> = lines
+            .expect("No input file")
             .map(|l| l.unwrap().parse::<usize>().unwrap())
             .collect();
         return (

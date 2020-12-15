@@ -112,8 +112,8 @@ impl Day14 {
 }
 
 impl Puzzle for Day14 {
-    fn solve(&self, lines: io::Lines<io::BufReader<File>>) -> (String, String) {
-        let input: Vec<String> = lines.map(|l| l.unwrap()).collect();
+    fn solve(&self, lines: io::Result<io::Lines<io::BufReader<File>>>) -> (String, String) {
+        let input: Vec<String> = lines.expect("No input file").map(|l| l.unwrap()).collect();
         return (
             self.solve_part1(input.clone()).to_string(),
             self.solve_part2(input.clone()).to_string(),

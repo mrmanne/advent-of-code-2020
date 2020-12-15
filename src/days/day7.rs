@@ -96,8 +96,8 @@ impl Day7 {
 }
 
 impl Puzzle for Day7 {
-    fn solve(&self, lines: io::Lines<io::BufReader<File>>) -> (String, String) {
-        let rules: Vec<String> = lines.map(|l| l.unwrap()).collect();
+    fn solve(&self, lines: io::Result<io::Lines<io::BufReader<File>>>) -> (String, String) {
+        let rules: Vec<String> = lines.expect("No input file").map(|l| l.unwrap()).collect();
         return (
             self.solve_part1(&rules, "shiny gold").to_string(),
             self.solve_part2(&rules, "shiny gold").to_string(),

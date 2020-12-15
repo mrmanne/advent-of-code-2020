@@ -49,8 +49,8 @@ impl Day6 {
 }
 
 impl Puzzle for Day6 {
-    fn solve(&self, lines: io::Lines<io::BufReader<File>>) -> (String, String) {
-        let numbers: Vec<String> = lines.map(|l| l.unwrap()).collect();
+    fn solve(&self, lines: io::Result<io::Lines<io::BufReader<File>>>) -> (String, String) {
+        let numbers: Vec<String> = lines.expect("No input file").map(|l| l.unwrap()).collect();
         return (
             self.solve_part1(&numbers).to_string(),
             self.solve_part2(&numbers).to_string(),

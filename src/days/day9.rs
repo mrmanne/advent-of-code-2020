@@ -50,8 +50,9 @@ impl Day9 {
 }
 
 impl Puzzle for Day9 {
-    fn solve(&self, lines: io::Lines<io::BufReader<File>>) -> (String, String) {
+    fn solve(&self, lines: io::Result<io::Lines<io::BufReader<File>>>) -> (String, String) {
         let numbers: Vec<usize> = lines
+            .expect("No input file")
             .map(|l| l.unwrap().parse::<usize>().unwrap())
             .collect();
         return (
