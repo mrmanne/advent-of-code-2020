@@ -12,6 +12,7 @@ mod day18;
 mod day19;
 mod day2;
 mod day20;
+mod day21;
 mod day3;
 mod day4;
 mod day5;
@@ -42,6 +43,7 @@ pub fn puzzle_factory(day: u8) -> Option<Box<dyn Puzzle>> {
         18 => Some(Box::new(day18::Day18 {})),
         19 => Some(Box::new(day19::Day19 {})),
         20 => Some(Box::new(day20::Day20 {})),
+        21 => Some(Box::new(day21::Day21 {})),
         _ => None,
     }
 }
