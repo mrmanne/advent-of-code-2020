@@ -1,7 +1,7 @@
 # Advent of Code 2020
 
 ## Introduction
-I'm taking the opportunity to learn a new language, Rust, in this years Advent of Code.
+I'm taking the opportunity to learn a new language, Rust, in this years [Advent of Code](https://adventofcode.com/).
 
 ## Prerequisites
 Install Rust with [rustup](https://rustup.rs/).
